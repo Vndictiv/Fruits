@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruits</title>
+</head>
+<body>
+
+
+<table>
+    <th>Fruit name</th>
+    <tbody>
+    <tr th:each="fruit : ${fruits}">
+
+        <td th:text="${fruit.name}" />
+    </tr>
+    </tbody>
+</table>
+<br>
+
+    <a href="/app/add">add Fruits</a>
+
+<br>
+
+<form action="#" th:action="@{/app/stream}" method="GET">
+
+    <input type="text" name="letter" th:value="${letter}" />
+
+</form>
+
+</body>
+</html>

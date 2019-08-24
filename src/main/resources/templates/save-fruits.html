@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>save fruit</title>
+</head>
+<body>
+
+<form action="/app/save" th:action="@{/app/save}" th:object="${fruit}" method="post">
+
+
+    <input type="text" name="name" />
+    <input type="submit" value="Save"/>
+</form>
+
+<a href="fruits.html">Get All Fruits</a>
+
+
+</body>
+</html>
